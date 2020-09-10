@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~animate.css/animate.min';
+html, body {
+    height: 100%;
+    background: rgb(68,68,70);
+background: radial-gradient(circle, rgba(68,68,70,1) 0%, rgba(84,80,80,1) 52%, rgba(0,0,0,1) 100%);
+  }
+
+  

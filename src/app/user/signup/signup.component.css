@@ -9,3 +9,7 @@
     border-color: black;
     box-shadow: 0px 0px 20px 2px #231f1f;
 }
+.agrandar-boton:hover{
+    transform: scale(1.0.2);
+    box-shadow: 0px 0px 20px 2px #231f1f;
+}

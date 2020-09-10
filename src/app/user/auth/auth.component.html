@@ -1,5 +1,41 @@
+<div class="container h-100">
+        <div class="row align-items-center h-100 justify-content-center align-items-center"        >
+        <div class="col-6">
+                <div class="card style-card">
+                        <div class="card-header header-tarjeta">
+                                <div class="col-md-12 text-center ">
+                                        <img class="img-nav" src="/assets/img/fonTrclear.png" alt="">
+                                </div>
+                        </div>
+                           <div class="card-body">
+                                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                                        <div class="form-group">
+                                          <label for="user">Username</label>
+                                          <input type="user" class="form-control" id="user" aria-describedby="emailHelp" formControlName="email" required>                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Password</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" required>
+                                        </div>
+                                        <div class="alert alert-danger" *ngIf="error" role="alert">
+                                                {{error}}
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                                <button type="submit" class="btn btn-outline-primary btn-lg">Ingresar</button>
+                                        </div>
+                                        <div class="col-md-12 mt-2 text-center">
+                                                <small id="emailHelp" class="form-text text-muted">Si usted no esta registrado haga click <a  [routerLink]="['/auth/signup']" >aquí</a></small> 
+                                        </div>
+                                </form>
+                                
+                           </div>
+                   </div>
+           </div>     
+        </div>
+</div>
+
+<!-- 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <input matInput placeholder="User" formControlName="userName" required>
         <input matInput type="password" placeholder="Password" formControlName="password" required>
         <button mat-raised-button color="primary">Login</button>
-</form>
+</form> -->
