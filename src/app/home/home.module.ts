@@ -11,7 +11,7 @@ import {NgbDropdownMenu} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    NgbDropdownMenu
+
   ]
 })
 export class HomeModule { }
